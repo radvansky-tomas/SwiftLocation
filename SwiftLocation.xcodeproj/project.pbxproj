@@ -12,6 +12,12 @@
 		4AD0B12E8C116F9BE726E2F4 /* Pods_SwiftLocation_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E48CCA0AB8BFC61247155 /* Pods_SwiftLocation_macOS.framework */; };
 		52D6D9871BEFF229002C0205 /* SwiftLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* SwiftLocation.framework */; };
 		640E5B371FA492F7006CFB2E /* HeadingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E5B361FA492F7006CFB2E /* HeadingRequest.swift */; };
+		6418AA701FA64FA000B4976B /* Geofencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418AA6F1FA64FA000B4976B /* Geofencer.swift */; };
+		6418AA711FA64FA000B4976B /* Geofencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418AA6F1FA64FA000B4976B /* Geofencer.swift */; };
+		6418AA721FA64FA000B4976B /* Geofencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418AA6F1FA64FA000B4976B /* Geofencer.swift */; };
+		6418AA741FA650E500B4976B /* RegionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418AA731FA650E500B4976B /* RegionRequest.swift */; };
+		6418AA751FA650E500B4976B /* RegionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418AA731FA650E500B4976B /* RegionRequest.swift */; };
+		6418AA761FA650E500B4976B /* RegionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418AA731FA650E500B4976B /* RegionRequest.swift */; };
 		6459B1281FA4B8B800E0CD53 /* GeocoderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6459B1271FA4B8B800E0CD53 /* GeocoderRequest.swift */; };
 		6459B1291FA4B8B800E0CD53 /* GeocoderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6459B1271FA4B8B800E0CD53 /* GeocoderRequest.swift */; };
 		6459B12A1FA4B8B800E0CD53 /* GeocoderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6459B1271FA4B8B800E0CD53 /* GeocoderRequest.swift */; };
@@ -105,6 +111,8 @@
 		52D6DA0F1BF000BD002C0205 /* SwiftLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B449FAA014A1D936DCB05E /* Pods-SwiftLocation-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLocation-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLocation-iOS/Pods-SwiftLocation-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		640E5B361FA492F7006CFB2E /* HeadingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingRequest.swift; sourceTree = "<group>"; };
+		6418AA6F1FA64FA000B4976B /* Geofencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geofencer.swift; sourceTree = "<group>"; };
+		6418AA731FA650E500B4976B /* RegionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRequest.swift; sourceTree = "<group>"; };
 		6459B1271FA4B8B800E0CD53 /* GeocoderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderRequest.swift; sourceTree = "<group>"; };
 		6459B1311FA4D67700E0CD53 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		6459B1331FA4E5CA00E0CD53 /* FindPlaceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPlaceRequest.swift; sourceTree = "<group>"; };
@@ -316,6 +324,8 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6418AA6F1FA64FA000B4976B /* Geofencer.swift */,
+				6418AA731FA650E500B4976B /* RegionRequest.swift */,
 				64880FEC1FA3695500AC0639 /* Locator.swift */,
 				648810061FA36C9300AC0639 /* LocationRequest.swift */,
 				6459B1381FA5B68900E0CD53 /* IPLocationRequest.swift */,
@@ -871,7 +881,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6418AA701FA64FA000B4976B /* Geofencer.swift in Sources */,
 				6459B1281FA4B8B800E0CD53 /* GeocoderRequest.swift in Sources */,
+				6418AA741FA650E500B4976B /* RegionRequest.swift in Sources */,
 				648810021FA36B3600AC0639 /* Shared.swift in Sources */,
 				6459B1391FA5B68900E0CD53 /* IPLocationRequest.swift in Sources */,
 				64880FED1FA3695500AC0639 /* Locator.swift in Sources */,
@@ -896,8 +908,10 @@
 				648810041FA36B3600AC0639 /* Shared.swift in Sources */,
 				6459B1361FA4E5CA00E0CD53 /* FindPlaceRequest.swift in Sources */,
 				6459B12A1FA4B8B800E0CD53 /* GeocoderRequest.swift in Sources */,
+				6418AA761FA650E500B4976B /* RegionRequest.swift in Sources */,
 				64880FEF1FA3695500AC0639 /* Locator.swift in Sources */,
 				648810091FA36C9300AC0639 /* LocationRequest.swift in Sources */,
+				6418AA721FA64FA000B4976B /* Geofencer.swift in Sources */,
 				6459B13B1FA5B68900E0CD53 /* IPLocationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,8 +923,10 @@
 				648810031FA36B3600AC0639 /* Shared.swift in Sources */,
 				6459B1351FA4E5CA00E0CD53 /* FindPlaceRequest.swift in Sources */,
 				6459B1291FA4B8B800E0CD53 /* GeocoderRequest.swift in Sources */,
+				6418AA751FA650E500B4976B /* RegionRequest.swift in Sources */,
 				64880FEE1FA3695500AC0639 /* Locator.swift in Sources */,
 				648810081FA36C9300AC0639 /* LocationRequest.swift in Sources */,
+				6418AA711FA64FA000B4976B /* Geofencer.swift in Sources */,
 				6459B13A1FA5B68900E0CD53 /* IPLocationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
