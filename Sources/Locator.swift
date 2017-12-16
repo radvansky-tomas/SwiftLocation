@@ -647,7 +647,13 @@ public class LocatorManager: NSObject, CLLocationManagerDelegate {
 			self.isMonitoringSignificantLocationChanges = false
 		}
 	}
-	
+    
+    // MARK: CLLocationManager distance filter
+    public func setDistanceFilter(distanceFilter:CLLocationDistance)
+    {
+        self.manager.distanceFilter = distanceFilter
+    }
+    
 	// MARK: CLLocationManager Delegates
 	
 	public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
